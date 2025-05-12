@@ -1,5 +1,6 @@
 import requests
 
+
 def comprobar_estado():
     try:
         respuesta = requests.get("https://api.ejemplo.com/estado")
@@ -10,4 +11,6 @@ def comprobar_estado():
     except requests.exceptions.RequestException:
         return "FALLO DE CONEXIÓN"
     
-    
+
+if __name__ == "__main__": 
+    comprobar_estado()
